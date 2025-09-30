@@ -66,3 +66,58 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Contenedor de productos */
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* espacio entre productos */
+  margin-top: 2rem;
+}
+
+/* Cada tarjeta de producto */
+.producto {
+  background-color: #1f1f1f;
+  color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagen del producto */
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Título y descripción */
+.producto h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.producto p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Precio */
+.producto .precio {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #ffb347;
+}
+
+/* Secciones del Marketplace */
+section {
+  padding: 3rem 1rem;
+}
