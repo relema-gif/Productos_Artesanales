@@ -1,14 +1,11 @@
-/* frontend/src/index.css - ESTILOS GLOBALES DEL MARKETPLACE */
-
 :root {
-  /* Cambiamos la fuente a una más cálida y el fondo al color crema */
+ 
   font-family: 'Georgia', 'serif', 'sans-serif'; 
   line-height: 1.6;
   font-weight: 400;
 
-  color: #333333; /* Color de texto oscuro para el tema claro */
-  background-color: #F8F4E3; /* Color crema suave/pergamino para el fondo global */
-
+  color: #333333; 
+  background-color: #F8F4E3; 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,20 +15,20 @@
 body {
   margin: 0;
   display: flex;
-  justify-content: center; /* Centrar el contenido horizontalmente */
-  align-items: flex-start; /* Colocar contenido arriba */
+  justify-content: center; 
+  align-items: flex-start;
   min-width: 320px;
   min-height: 100vh;
 }
 
-/* Estilos de Enlaces ajustados al tema terroso */
+
 a {
   font-weight: 500;
-  color: #A0522D; /* Tono marrón oscuro para los enlaces */
+  color: #A0522D; 
   text-decoration: none;
 }
 a:hover {
-  color: #8B4513; /* Marrón más oscuro al pasar el ratón */
+  color: #8B4513; 
 }
 
-/* El resto de las reglas de botones y h1 se heredarán o serán anuladas por App.css */
+
