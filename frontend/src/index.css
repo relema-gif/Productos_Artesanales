@@ -1,11 +1,13 @@
+/* frontend/src/index.css - ESTILOS GLOBALES DEL MARKETPLACE */
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  /* Cambiamos la fuente a una más cálida y el fondo al color crema */
+  font-family: 'Georgia', 'serif', 'sans-serif'; 
+  line-height: 1.6;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #333333; /* Color de texto oscuro para el tema claro */
+  background-color: #F8F4E3; /* Color crema suave/pergamino para el fondo global */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,111 +15,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center; /* Centrar el contenido horizontalmente */
+  align-items: flex-start; /* Colocar contenido arriba */
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+/* Estilos de Enlaces ajustados al tema terroso */
+a {
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  color: #A0522D; /* Tono marrón oscuro para los enlaces */
+  text-decoration: none;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+a:hover {
+  color: #8B4513; /* Marrón más oscuro al pasar el ratón */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-/* Contenedor de productos */
-.productos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem; /* espacio entre productos */
-  margin-top: 2rem;
-}
-
-/* Cada tarjeta de producto */
-.producto {
-  background-color: #1f1f1f;
-  color: #fff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  width: 250px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: transform 0.2s;
-}
-
-.producto:hover {
-  transform: translateY(-5px);
-}
-
-/* Imagen del producto */
-.producto img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-/* Título y descripción */
-.producto h3 {
-  margin: 0.5rem 0;
-  font-size: 1.2rem;
-}
-
-.producto p {
-  font-size: 0.95rem;
-  color: #ccc;
-}
-
-/* Precio */
-.producto .precio {
-  font-weight: bold;
-  margin-top: 0.5rem;
-  color: #ffb347;
-}
-
-/* Secciones del Marketplace */
-section {
-  padding: 3rem 1rem;
-}
+/* El resto de las reglas de botones y h1 se heredarán o serán anuladas por App.css */

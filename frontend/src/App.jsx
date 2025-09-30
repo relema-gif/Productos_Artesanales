@@ -22,7 +22,7 @@ function App() {
          
     
         <div className="product-card">
-          <img src= {Tazon} alt="tazon" className="product-image"/> 
+          <img src= {tazon} alt="tazon" className="product-image"/> 
           <p className="product-type">Cerámica</p>
           <h3>Tazón de Barro Bruñido</h3>
           <p>Pieza única con esmalte natural y textura rústica.</p>
@@ -31,8 +31,7 @@ function App() {
         
         
         <div className="product-card">
-          <img src= {Bufanda} alt="bufanda" className="product-image"/>
-          <p className="product-type">Textil</p>
+          <img src= {bufanda} alt="bufanda" className="product-image"/>
           <p className="product-type">Textil</p>
           <h3>Bufanda de Alpaca Teñida a Mano</h3>
           <p>Lana suave con diseño geométrico andino.</p>
